@@ -1,0 +1,194 @@
+* {
+    padding: 0;
+    margin: 0; }
+ 
+    .wrapper{
+        background-color: #191c32;
+        width: 100vw;
+        height: 190vh;
+    }
+ 
+    .imageLogo{
+        width: 68%;
+        border-radius: 10%;
+    }
+   ul.navbar-nav li.nav-item a.nav-link{
+        font-size: 20px;
+        color: aqua;
+        text-decoration: none;
+        padding: 25px;
+    }
+   a.nav-link:hover{
+        background-color:rgb(10, 4, 4);
+    }
+.navbar-toggler{
+        background-color: rgb(241, 176, 91);
+        margin-top: 2%;
+    }
+ 
+   
+    .titleIndex{
+        color: aqua;
+    }
+    .titleIndexSpan{
+        color: white;
+    }
+    .indexImage{
+        width: 18%;
+        height: 18%;
+        box-shadow: 0px 0px 15px 15px #90ddeb;
+        -webkit-box-shadow: 0px 0px 15px 15px #1eecb8;
+ 
+    }
+    .logosSkills{
+        padding: 2%;
+    }
+ 
+    
+    footer{
+        background-color: aqua;
+        display: flex;
+        justify-content: center;
+        padding: 2%;
+    }
+    .logoWtspp{
+        width: 3vw;        
+    }
+    .titleSkill{
+        color: rgb(180, 158, 32);
+    }
+    .form{
+        background-color: white;
+        height: 70vh;
+        width: 40vw;
+        border-radius: 15px;
+        margin-left: 25%;  
+        display: grid;
+        gap: 1em;
+    }
+    .inputs{
+        width: 30vw;
+        display: flex;
+        flex-direction: column;
+        margin-left: 15%;
+        padding: 1%;
+        margin-bottom: 3%;  
+    }
+    .titleContact{
+        color: rgb(11, 192, 192);
+        margin-top: 3%;
+    }
+    .send{
+       color: white;
+       background-color: rgb(31, 146, 192);
+       font-size: 20px;
+       width: 30vw;
+       margin-left: 15%;
+        padding: 1%;
+        margin-bottom: 3%;
+    }
+         
+    .divider{
+        background-color: aqua;
+        height: 10px;
+        width: 110px;
+        margin-left: 42%;
+    }
+    .infoEimageIndex{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    .paragraphIndex{
+        padding: 1%;
+        font-family: 'Montserrat', sans-serif;
+    }
+    .index{
+        background-color: #191c32;
+        width: 100vw;
+        height: 100vh;
+    }
+   .infoFooter{
+       color: black;
+       font-size: 25px;
+       font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+   }
+   .cv{
+      height: 135vh;
+      width: 50vw;
+   }
+   .containerCv{
+       display: flex;
+       justify-content: center;
+   }
+   
+   /*Skill mobile*/
+   @media screen and (max-width:500px){
+    .wrapperSkills{        
+        height: 320vh;
+    }
+    .logoWtspp{
+        width: 10vw;        
+    }   
+}
+
+ /*contact mobile*/
+ @media screen and (max-width:500px){
+    .wrapperContact{        
+        height: 120vh;
+    }
+    .form{
+        width: 80vw;
+        margin-left: 8%; 
+        margin-right: 6%;      
+    }
+    .inputs{
+        width: 50vw;
+    } 
+}
+
+/*experience mobile*/
+@media screen and (max-width:500px){
+    .wrapperExperience{
+        height: 100vh;
+        width: 100wh;
+    }
+    .cv{
+        height: 100vh;
+        width: 100vw;
+     }
+       
+}
+
+/*Index mobile*/
+@media screen and (max-width:500px){
+    .wrapperIndex{
+        display: grid;
+        grid-area: "head"
+                    "photo"
+                    "about"
+                    "footer" ;
+        grid-template-columns: 1fr
+    }
+    .imgAmsterdam{
+        grid-area:photo;
+        width: 100vw;
+        display: flex;
+        flex-direction: column;
+    }
+    .paragraphIndex{
+        grid-area:about;
+        width: 100vw;
+    }
+    .infoEimageIndex{
+        display: flex;
+        flex-direction: column;
+    }
+    .divider{
+        margin-left: 38%;
+    }
+    
+     
+}
+
+
+
